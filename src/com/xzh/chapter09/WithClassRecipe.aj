@@ -1,4 +1,4 @@
-package com.xzh;
+package com.xzh.chapter09;
 
 public aspect WithClassRecipe {
 //	pointcut withClassCut():within(MyClass);
