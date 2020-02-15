@@ -11,15 +11,30 @@ public class MyClass {
 		this.salary = salary;
 	}
 
-	public void foo(int number,String name){
+	public void foo(int number,String name) {
 		System.out.println("Inside MyClass.foo (int,String)");
+	}
+
+	public int foo(){
+		System.out.println("foo inside");
+		return 100;
+	}
+
+	public int bar(int number){
+		System.out.println("bar inside");
+		return 200;
+	}
+
+	public int baz(){
+		System.out.println("baz inside");
+		return 300;
 	}
 
 	public static void main(String[] args) {
 
-		MyClass myClass1=new MyClass();
+		MyClass myClass=new MyClass();
 
-		myClass1.foo(1,"foo");
+			myClass.foo(1,"num");
 
 	}
 }
