@@ -1,0 +1,29 @@
+this ref:com.xzh.aspectj_in_action.this_and_target.model.FirstModel@77459877
+initialization(com.xzh.aspectj_in_action.this_and_target.model.FirstModel())
+........
+this ref:com.xzh.aspectj_in_action.this_and_target.model.FirstModel@77459877
+execution(com.xzh.aspectj_in_action.this_and_target.model.FirstModel())
+........
+this ref:com.xzh.aspectj_in_action.this_and_target.model.FirstModel@77459877
+execution(void com.xzh.aspectj_in_action.this_and_target.model.FirstModel.foo(int, String))
+........
+this ref:com.xzh.aspectj_in_action.this_and_target.model.FirstModel@77459877
+get(PrintStream java.lang.System.out)
+........
+this ref:com.xzh.aspectj_in_action.this_and_target.model.FirstModel@77459877
+call(void java.io.PrintStream.println(String))
+........
+Inside MyClass.foo (int,String)
+this ref:com.xzh.aspectj_in_action.this_and_target.model.FirstModel@77459877
+call(void com.xzh.aspectj_in_action.this_and_target.model.FirstModel.bar())
+........
+this ref:com.xzh.aspectj_in_action.this_and_target.model.FirstModel@77459877
+execution(void com.xzh.aspectj_in_action.this_and_target.model.FirstModel.bar())
+........
+this ref:com.xzh.aspectj_in_action.this_and_target.model.FirstModel@77459877
+call(com.xzh.aspectj_in_action.this_and_target.model.SecondModel())
+........
+this ref:com.xzh.aspectj_in_action.this_and_target.model.FirstModel@77459877
+call(void com.xzh.aspectj_in_action.this_and_target.model.SecondModel.methodInSecond())
+........
+finish in ThirdModel

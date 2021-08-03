@@ -2,7 +2,7 @@ package com.xzh.pattern.test;
 
 import com.xzh.Hello;
 import com.xzh.MyClass;
-import com.xzh.pattern.SingletonPattern;
+
 
 //public class MySingleton implements SingletonPattern.Singleton {
 //	public static void main(String[] args) {
