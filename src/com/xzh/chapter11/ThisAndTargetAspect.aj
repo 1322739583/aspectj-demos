@@ -17,14 +17,14 @@ public aspect ThisAndTargetAspect {
 
     pointcut cflowcut():cflow(call(* FirstModel.*(..)))&&!within(ThisAndTargetAspect)&&target(FirstModel);
 
-    before():cflowcut(){
-       // System.out.println("this ref:"+thisJoinPoint.getThis());
-        System.out.println(thisJoinPoint);
-        System.out.println("........");
-        // System.out.println("this:"+thisJoinPoint.getThis());
-        // System.out.println("Signature:"+thisJoinPoint.getSignature());
-        //System.out.println("SourceLocation:"+thisJoinPoint.getSourceLocation());
-    }
+//    before():cflowcut(){
+//       // System.out.println("this ref:"+thisJoinPoint.getThis());
+//        System.out.println(thisJoinPoint);
+//        System.out.println("........");
+//        // System.out.println("this:"+thisJoinPoint.getThis());
+//        // System.out.println("Signature:"+thisJoinPoint.getSignature());
+//        //System.out.println("SourceLocation:"+thisJoinPoint.getSourceLocation());
+//    }
 
 
 }
