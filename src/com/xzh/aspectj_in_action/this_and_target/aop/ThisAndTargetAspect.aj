@@ -25,8 +25,9 @@ public aspect ThisAndTargetAspect {
     }
     // pointcut thisMyClassPointCut(FirstModel modele):target(model);
 
-//    @Before("cutThis2(FirstModel)")
-//    public void proceed(JoinPoint joinPoint) {
+//    @Before("cutThis2(FirstModel )")
+//    public void proceed(FirstModel firstModel,JoinPoint joinPoint) {
+//        System.out.println(firstModel);
 //        System.out.println("this ref:"+joinPoint.getThis());
 //        System.out.println(joinPoint);
 //        System.out.println("........");
@@ -35,15 +36,15 @@ public aspect ThisAndTargetAspect {
 //        //System.out.println("SourceLocation:"+thisJoinPoint.getSourceLocation());
 //    }
 
-    @Before("cutThisAnsy()")
-    public void proceed2(JoinPoint joinPoint) {
-        System.out.println("this ref:"+joinPoint.getThis());
-        System.out.println(joinPoint);
-        System.out.println("........");
-        // System.out.println("this:"+thisJoinPoint.getThis());
-        // System.out.println("Signature:"+thisJoinPoint.getSignature());
-        //System.out.println("SourceLocation:"+thisJoinPoint.getSourceLocation());
-    }
+//    @Before("cutThis()")
+//    public void proceed2(JoinPoint joinPoint) {
+//        System.out.println("this ref:"+joinPoint.getThis());
+//        System.out.println(joinPoint);
+//        System.out.println("........");
+//        // System.out.println("this:"+thisJoinPoint.getThis());
+//        // System.out.println("Signature:"+thisJoinPoint.getSignature());
+//        //System.out.println("SourceLocation:"+thisJoinPoint.getSourceLocation());
+//    }
 
 
 }

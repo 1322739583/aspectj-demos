@@ -21,6 +21,20 @@ public class WithinAspect {
    public void filterFoo(){
 
    }
+    @Pointcut("within(com.xzh.aspectj_in_action.within.model.FirstModel)")
+    public void filterFirstModel(){
+
+    }
+
+    @Pointcut("within(com.xzh.aspectj_in_action.within.model.SecondModel)")
+    public void filterSecondModel(){
+
+    }
+
+    @Pointcut("within(com.xzh.aspectj_in_action.within.model.ThirdModel)")
+    public void filterThirdModel(){
+
+    }
 
     @Pointcut("withincode(* com.xzh.aspectj_in_action.within.model.FirstModel.bar(..))")
     public void filterBar(){
@@ -31,7 +45,7 @@ public class WithinAspect {
 
     }
 
-    @Pointcut("cflow(cutFirstModel())&&!within(WithinAspect)&&filterFoo()")
+    @Pointcut("cflow(cutFirstModel())&&!within(WithinAspect)&&filterBar()||filterThirdModel()")
     public void withinCut(){
 
     }
